@@ -3,6 +3,8 @@ import logo from "../../assets/LogoMini.svg";
 import styles from "./fullPage.module.scss";
 import { Search } from "../../components/search/search";
 import { CoreTemp } from "../../components/coreTemp/coreTemp";
+import { DetailsToday } from "../../components/detailsToday/detailsToday";
+import { Forecast } from "../../components/forecast/forecast";
 
 export const FullPage = () => {
   return (
@@ -17,7 +19,10 @@ export const FullPage = () => {
           </div>
           <CoreTemp />
         </div>
-        <div className={styles.mainRight}>asdasd</div>
+        <div className={styles.mainRight}>
+          <DetailsToday />
+          <Forecast />
+        </div>
       </main>
     </div>
   );

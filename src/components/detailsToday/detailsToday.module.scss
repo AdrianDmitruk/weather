@@ -1,0 +1,49 @@
+@import "src/theme/variables";
+@import "src/theme/fonts";
+
+.details {
+  padding: 28px 24px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  border-radius: 12px;
+  background: $gray-800;
+
+  &Title {
+    color: $gray-400;
+    @include text-md;
+  }
+  &Wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &Card {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $gray-700;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &CardLeft {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  &CardName {
+    color: $gray-200;
+    @include heading-xs;
+  }
+
+  &CardRight {
+    color: $gray-100;
+    @include heading-sm;
+  }
+}

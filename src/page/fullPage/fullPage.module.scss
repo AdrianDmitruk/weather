@@ -19,6 +19,9 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    background: $gray-800;
   }
 
   &LeftHeader {
@@ -41,5 +44,8 @@
   &Right {
     max-width: 630px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 }
