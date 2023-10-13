@@ -1,0 +1,81 @@
+@import "src/theme/variables";
+@import "src/theme/fonts";
+
+.temp {
+  background: url(../../assets/content/content1.png),
+    lightgray 50% / cover no-repeat;
+
+  border-radius: 8px;
+  padding: 32px;
+
+  position: relative;
+
+  &Header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 354px;
+  }
+
+  &Left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: $gray-100;
+  }
+
+  &LeftTitle {
+    @include heading-md;
+  }
+
+  &LeftSubtitle {
+    @include text-md;
+  }
+
+  &Right {
+    color: $gray-100;
+    @include heading-md;
+  }
+
+  &Footer {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &FooterCel {
+    color: $white;
+    @include heading-hg;
+  }
+
+  &FooterWrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &WrapCel {
+    color: $white;
+    @include heading-md;
+  }
+
+  &WrapDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $white;
+    opacity: 0.4;
+  }
+
+  &WrapType {
+    color: $white;
+    @include text-lg;
+  }
+
+  &Bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

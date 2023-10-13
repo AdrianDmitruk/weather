@@ -1,0 +1,45 @@
+@import "src/theme/variables";
+@import "src/theme/fonts";
+
+.container {
+  max-width: 1342px;
+  width: 100%;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+
+  &Left {
+    max-width: 664px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &LeftHeader {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  &HeaderLogo {
+    display: flex;
+    padding: 8px;
+    background: $gray-600;
+    border-radius: 8px;
+  }
+
+  &HeaderLogo img {
+    max-width: none;
+  }
+
+  &Right {
+    max-width: 630px;
+    width: 100%;
+  }
+}

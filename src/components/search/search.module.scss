@@ -1,0 +1,28 @@
+@import "src/theme/variables";
+@import "src/theme/fonts";
+
+.serach {
+  width: 100%;
+  position: relative;
+
+  &Input {
+    width: 100%;
+    padding: 17px 20px;
+
+    background: $gray-600;
+    border-radius: 8px;
+    color: $gray-400;
+    @include text-md;
+
+    &::placeholder {
+      color: $gray-400;
+      @include text-md;
+    }
+  }
+
+  &Loader {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+  }
+}
