@@ -42,4 +42,11 @@
     color: $gray-200;
     @include text-lg;
   }
+
+  &Error {
+    color: $blue-light;
+    @include text-lg;
+    margin-top: 20px;
+    text-align: center;
+  }
 }

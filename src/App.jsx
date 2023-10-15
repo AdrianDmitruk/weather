@@ -8,7 +8,7 @@ const App = () => {
       <HashRouter>
         <Routes>
           <Route path={"/"} element={<MainPage />} />
-          <Route path={"/city"} element={<FullPage />} />
+          <Route path={"/city/:name"} element={<FullPage />} />
         </Routes>
       </HashRouter>
     </>
